@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace GameSharpBackend.Repositories
 {
-    public class GameInMemoryRepository : IGameRepository
+    public class InMemoryGameRepository : IGameRepository
     {
         private readonly List<GameData> games = new List<GameData>{
                 new GameData
@@ -28,7 +28,7 @@ namespace GameSharpBackend.Repositories
                 }
         };
 
-        public GameInMemoryRepository()
+        public InMemoryGameRepository()
         {
             Console.WriteLine("Creating game repository!!!!!!");
         }
@@ -36,6 +36,10 @@ namespace GameSharpBackend.Repositories
         public void Create(GameData game) 
         {
             games.Add(game);
+        }
+
+        public void Update(GameData game)
+        {
         }
 
         public GameData GetById(Guid id)
@@ -57,5 +61,7 @@ namespace GameSharpBackend.Repositories
                 games.Remove(game);
             }
         }
+
+        
     }
 }

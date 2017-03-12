@@ -16,6 +16,7 @@ using GameSharpApi.Queries;
 using GameSharpBackend.CommandHandlers;
 using GameSharpBackend.QueryHandlers;
 using GameSharpBackend.Queries;
+using GameSharp.Core.Repositories;
 
 namespace GameSharpWeb
 {
@@ -49,7 +50,7 @@ namespace GameSharpWeb
             // the collection, and build the container. If you want
             // to dispose of the container at the end of the app,
             // be sure to keep a reference to it as a property or field.
-            builder.RegisterType<GameInMemoryRepository>().As<IGameRepository>().SingleInstance();
+            builder.RegisterType<MysqlGameRepository>().As<IGameRepository>().SingleInstance();
 
             builder.Populate(services);
 
@@ -70,8 +71,7 @@ namespace GameSharpWeb
                 var c = ctx.Resolve<IComponentContext>();
                 return t =>
                 {
-                    object o;
-                    return c.TryResolve(t, out o) ? o : null;
+                    return c.TryResolve(t, out object o) ? o : null;
                 };
             });
             builder.Register<MultiInstanceFactory>(ctx =>

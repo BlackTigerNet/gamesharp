@@ -7,16 +7,16 @@ namespace GameSharpBackend.CommandHandlers
 {
     public class DeleteGameHandler : IRequestHandler<DeleteGameCmd>
     {
-        private readonly IGameRepository GameInMemoryRepository;
+        private readonly IGameRepository GameRepository;
 
-        public DeleteGameHandler(IGameRepository gameInMemoryRepository)
+        public DeleteGameHandler(IGameRepository gameRepository)
         {
-            this.GameInMemoryRepository = gameInMemoryRepository;
+            this.GameRepository = gameRepository;
         }
 
         public void Handle(DeleteGameCmd cmd)
         {
-            GameInMemoryRepository.Remove(cmd.ID);
+            GameRepository.Remove(cmd.ID);
         }
     }
 }

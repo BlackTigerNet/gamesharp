@@ -8,19 +8,22 @@ namespace GameSharpBackend.CommandHandlers
 {
     public class EditGameHandler : IRequestHandler<EditGameCmd>
     {
-        private readonly IGameRepository GameInMemoryRepository;
-        public EditGameHandler(IGameRepository gameInMemoryRepository)
+        private readonly IGameRepository GameRepository;
+        public EditGameHandler(IGameRepository gameRepository)
         {
-            this.GameInMemoryRepository = gameInMemoryRepository;
+            this.GameRepository = gameRepository;
         }
 
         public void Handle(EditGameCmd cmd)
         {
-            var game = GameInMemoryRepository.GetById(cmd.ID);
+            var game = GameRepository.GetById(cmd.ID);
             game.Name = cmd.Name;
             game.Description = cmd.Description;
             game.Publisher = cmd.Publisher;
             game.PublishDate = cmd.PublishDate;
+
+            GameRepository.Update(game);
+
         }
     }
 }

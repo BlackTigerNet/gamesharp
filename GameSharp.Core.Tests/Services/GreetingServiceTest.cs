@@ -1,4 +1,6 @@
-﻿using GameSharpBackend.Services;
+﻿using GameSharp.Core.Repositories;
+using GameSharpBackend.Services;
+using System;
 using Xunit;
 
 namespace GameSharpBackendTests
@@ -18,5 +20,7 @@ namespace GameSharpBackendTests
 
             Assert.Equal("Hello, World!", greetingService.greet());
         }
+
+        
     }
 }
