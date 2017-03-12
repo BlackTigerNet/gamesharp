@@ -1,0 +1,8 @@
+
+@model GameSharpApi.ViewModels.GameViewModel
+
+<h2>Delete @Model.Name?</h2>
+<form method="POST">
+  <button type="submit" class="btn btn-default">Delete</button>
+  <a asp-area="" asp-controller="Games" asp-action="Index"  class="btn btn-default">Cancel</a>
+</form>

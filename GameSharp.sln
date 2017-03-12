@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSharp.Core", "GameSharp.Core\GameSharp.Core.csproj", "{E1C297A8-36FA-4F8F-B562-AEDCBCB82B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSharp.Core.Tests", "GameSharp.Core.Tests\GameSharp.Core.Tests.csproj", "{6567AB35-C347-43F3-AAC5-D6CC5362FCCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSharp.Web", "GameSharp.Web\GameSharp.Web.csproj", "{560BAFF3-EBEB-4BCC-B7BB-17350C0187F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSharp.Api", "GameSharp.Api\GameSharp.Api.csproj", "{DE5B8444-B2C6-460F-B76F-BBF1FFDFF353}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1C297A8-36FA-4F8F-B562-AEDCBCB82B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C297A8-36FA-4F8F-B562-AEDCBCB82B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C297A8-36FA-4F8F-B562-AEDCBCB82B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C297A8-36FA-4F8F-B562-AEDCBCB82B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6567AB35-C347-43F3-AAC5-D6CC5362FCCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6567AB35-C347-43F3-AAC5-D6CC5362FCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6567AB35-C347-43F3-AAC5-D6CC5362FCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6567AB35-C347-43F3-AAC5-D6CC5362FCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560BAFF3-EBEB-4BCC-B7BB-17350C0187F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560BAFF3-EBEB-4BCC-B7BB-17350C0187F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560BAFF3-EBEB-4BCC-B7BB-17350C0187F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560BAFF3-EBEB-4BCC-B7BB-17350C0187F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5B8444-B2C6-460F-B76F-BBF1FFDFF353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5B8444-B2C6-460F-B76F-BBF1FFDFF353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5B8444-B2C6-460F-B76F-BBF1FFDFF353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5B8444-B2C6-460F-B76F-BBF1FFDFF353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
