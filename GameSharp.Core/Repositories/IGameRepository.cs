@@ -11,6 +11,5 @@ namespace GameSharpBackend.Repositories
        GameData GetById(Guid id);
        IEnumerable<GameData> GetAll();
        void Remove(Guid id);
-
     }
 }
