@@ -19,8 +19,6 @@ namespace GameSharpBackendTests
             var greetingService = new GreetingService();
 
             Assert.Equal("Hello, World!", greetingService.greet());
-        }
-
-        
+        }  
     }
 }
